@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>THE CLOCK</title>
+  <style> 
+        #clock { 
+            font-size: 15px; 
+            width: 15px; 
+            margin: 15px; 
+            text-align: center;     
+        } 
+    </style> 
+ 
+</head>
+<body>
+  <p></p>
+  <h1>CLOCK</h1></br>
+   <h2 id="clock"></h2> 
+  <label>set alarm:</label>
+  <input id="hour" placeholder="enter the hour" type="text" >
+  <input id="min" placeholder="enter the minutes" type="text" >
+  <input id="sec" placeholder="enter the seconds" type="text" >
+  <select id="ampm">
+   <option value="1">AM</option>
+   <option value="2">PM</option>
+  </select>
+  <button onclick="setAlarm(this)">set alarm</button>
+  <button onclick="stopAlarm(this)">stop alarm</button>
+
+  <h2 id='at'></h2>
+   <h2 id='ct'></h2>
+
+<span id="display_time"></span>
+  <script src="alarm.js"></script>
+</body>
+   
+</html>
